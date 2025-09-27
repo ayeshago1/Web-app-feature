@@ -1,0 +1,155 @@
+body {
+  background: linear-gradient(135deg, #fbeee6 0%, #f6d0b1 100%);
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#app-container {
+  max-width: 850px;
+  margin: 32px auto;
+  background: #fff8f0;
+  box-shadow: 0 4px 20px rgba(204, 158, 112, 0.09), 0 2px 8px #ffe3c1;
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+/* HERO SECTION */
+.hero {
+  background: url('https://images.unsplash.com/photo-1469398715555-76331a01a7ab?auto=format&fit=crop&w=900&q=80') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px 60px 20px;
+  position: relative;
+}
+.hero:after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(232, 157, 113, 0.68);
+  z-index: 0;
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+.hero h1 {
+  margin: 0 0 0.4em 0;
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: 3em;
+  letter-spacing: 2.5px;
+}
+.hero p {
+  margin: 0 0 2em 0;
+  font-size: 1.25em;
+  font-weight: 400;
+}
+#clickMeBtn {
+  background: linear-gradient(90deg, #fb8b24 0%, #f7c873 100%);
+  color: #fff;
+  border: none;
+  padding: 1em 2.5em;
+  border-radius: 28px;
+  font-size: 1.25em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 12px rgba(251, 139, 36, 0.18);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.18s;
+  margin-top: 0.5em;
+}
+#clickMeBtn:hover {
+  background: linear-gradient(90deg, #f7c873 0%, #fb8b24 100%);
+  transform: translateY(-2px) scale(1.04);
+}
+
+/* ABOUT SECTION */
+.about {
+  padding: 40px 32px 20px 32px;
+  text-align: center;
+}
+.about h2 {
+  color: #b05a18;
+  font-family: 'Playfair Display', 'Georgia', serif;
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+.about p {
+  font-size: 1.15em;
+  color: #733a10;
+  max-width: 620px;
+  margin: auto;
+}
+
+/* NEWSLETTER */
+.newsletter {
+  background: #ffe3c1;
+  padding: 34px 32px 34px 32px;
+  text-align: center;
+}
+.newsletter h2 {
+  margin-bottom: 0.3em;
+  color: #b05a18;
+  font-family: 'Playfair Display', 'Georgia', serif;
+}
+.newsletter form {
+  margin-top: 1em;
+}
+.newsletter input[type="email"] {
+  padding: 0.7em 1.2em;
+  border: 1.5px solid #f7c873;
+  border-radius: 20px;
+  font-size: 1em;
+  outline: none;
+  margin-right: 8px;
+}
+.newsletter button {
+  background: linear-gradient(90deg, #fb8b24 0%, #f7c873 100%);
+  color: #fff;
+  border: none;
+  padding: 0.7em 2em;
+  border-radius: 20px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+.newsletter button:hover {
+  background: linear-gradient(90deg, #f7c873 0%, #fb8b24 100%);
+}
+
+/* FOOTER */
+footer {
+  background: #ffe3c1;
+  color: #b05a18;
+  text-align: center;
+  font-size: 1.03em;
+  padding: 1.7em 0 0.9em 0;
+  letter-spacing: 0.5px;
+  position: relative;
+}
+.social-links {
+  margin-top: 0.7em;
+}
+.social-links a {
+  display: inline-block;
+  margin: 0 0.5em;
+  opacity: 0.8;
+  transition: opacity 0.18s;
+}
+.social-links a:hover {
+  opacity: 1;
+}
+.social-links img {
+  width: 24px;
+  height: 24px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+  #app-container { max-width: 99vw; }
+}
+@media (max-width: 600px) {
+  .about, .newsletter { padding: 24px 6vw; }
+  .hero { padding: 50px 5vw 36px 5vw; }
+}
